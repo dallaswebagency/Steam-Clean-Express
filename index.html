@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carpet Cleaning in Red Deer, AB | Steam Clean Express</title>
+<meta name="description" content="Steam Clean Express offers professional carpet and upholstery cleaning in Red Deer, AB. Owner-operated, fast drying, safe biodegradable cleaners. Call (403) 340-9015.">
+<meta name="theme-color" content="#1f1f21">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#c3262d;
+  --red-deep:#8c1a20;
+  --ink:#1f1f21;
+  --ink-2:#2b2b2e;
+  --grey:#77797c;
+  --line:#d9d6d1;
+  --paper:#f3f1ee;
+  --white:#fff;
+  --display:'Archivo','Arial Narrow',sans-serif;
+  --body:'Figtree',system-ui,sans-serif;
+  --cut:44px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--white);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1;letter-spacing:-.01em}
+.eyebrow{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:3px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-stretch:108%;font-weight:700;font-size:.95rem;letter-spacing:.04em;text-transform:uppercase;padding:16px 26px;border:2px solid var(--red);background:var(--red);color:#fff;transition:.2s;cursor:pointer;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
+.btn:hover{background:var(--ink);border-color:var(--ink)}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn.ghost:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn.white{background:#fff;color:var(--red-deep);border-color:#fff}
+.btn.white:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn.dark{background:var(--ink);border-color:var(--ink)}
+.btn.dark:hover{background:var(--red);border-color:var(--red)}
+
+/* header */
+.top{background:var(--ink);color:#cfcfd1;font-size:.84rem}
+.top .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0}
+.top b{color:#fff;font-weight:600}
+header.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+header.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+.brand img{height:54px;width:auto}
+.menu{display:flex;gap:30px;font-weight:600;font-size:.95rem}
+.menu a{position:relative;padding:6px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--red);transition:.25s}
+.menu a:hover::after{width:100%}
+.nav-r{display:flex;align-items:center;gap:22px}
+.tel{font-family:var(--display);font-stretch:110%;font-weight:800;font-size:1.1rem;display:flex;align-items:center;gap:8px}
+.tel svg{color:var(--red)}
+.burger{display:none;background:none;border:0;width:40px;height:40px;cursor:pointer}
+.burger span{display:block;width:24px;height:3px;background:var(--ink);margin:5px auto}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 18% 20%,rgba(195,38,45,.28),transparent 60%),radial-gradient(40% 50% at 55% 100%,rgba(255,255,255,.07),transparent 70%)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;min-height:640px;align-items:center}
+.hero-copy{padding:70px 40px 90px 0;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,5.6vw,5.2rem);font-stretch:96%;text-transform:uppercase;letter-spacing:-.02em;line-height:.95}
+.hero h1 .kick{display:block;font-family:var(--body);font-stretch:100%;font-weight:600;text-transform:none;letter-spacing:0;font-size:1.1rem;line-height:1.3;color:#e9a3a6;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--red);font-weight:900}
+.hero p.sub{margin:26px 0 32px;max-width:520px;color:#d0d0d3;font-size:1.12rem}
+.hero .cta{display:flex;flex-wrap:wrap;gap:14px}
+.marks{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:40px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);font-weight:600;font-size:.95rem}
+.marks li{display:flex;align-items:center;gap:9px}
+.marks svg{color:var(--red);flex:none}
+.hero-pic{position:relative;align-self:stretch;margin-right:calc((100vw - min(1200px,100vw - 40px))/-2)}
+.hero-pic .photo{position:absolute;inset:0;clip-path:polygon(16% 0,100% 0,100% 100%,0 100%);background:#222}
+.hero-pic .photo img{width:100%;height:100%;object-fit:cover;object-position:30% 50%}
+.hero-pic .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(31,31,33,.55),transparent 40%)}
+.seal{position:absolute;left:-10px;bottom:46px;width:170px;height:170px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 18px 40px rgba(0,0,0,.35);z-index:3;padding:14px}
+.seal img{width:100%}
+.est{position:absolute;right:40px;top:44px;z-index:3;background:var(--red);color:#fff;font-family:var(--display);font-stretch:112%;font-weight:800;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;padding:10px 16px}
+
+/* ticker */
+.ticker{background:var(--red);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;border-block:4px solid var(--ink)}
+.ticker .track{display:inline-flex;animation:slide 32s linear infinite}
+.ticker span{font-family:var(--display);font-stretch:108%;font-weight:800;font-style:italic;font-size:1.45rem;text-transform:uppercase;letter-spacing:.04em;padding:0 22px;display:inline-flex;align-items:center;gap:44px}
+.ticker span::after{content:"";width:12px;height:12px;background:#fff;transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* intro */
+.intro{padding:110px 0 90px;background:var(--paper)}
+.intro .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+.intro h2{font-size:clamp(2rem,3.8vw,3.3rem);text-transform:uppercase;font-stretch:96%;margin:18px 0 26px}
+.intro h2 em{color:var(--red);font-style:italic}
+.intro p{color:#424245;margin-bottom:16px;max-width:520px}
+.intro .free{margin-top:26px;display:flex;gap:16px;align-items:flex-start;padding:20px 22px;background:#fff;border-left:6px solid var(--red)}
+.intro .free b{font-family:var(--display);font-size:1.1rem;display:block;text-transform:uppercase}
+.frame{position:relative}
+.frame::before{content:"";position:absolute;inset:26px -26px -26px 26px;border:3px solid var(--red)}
+.frame img{position:relative;width:100%;aspect-ratio:4/3;object-fit:cover}
+.frame figcaption{position:absolute;left:-18px;bottom:30px;background:var(--ink);color:#fff;font-family:var(--display);font-stretch:108%;font-style:italic;font-weight:800;text-transform:uppercase;padding:12px 18px;font-size:1.05rem;z-index:2}
+
+/* stats */
+.stats{background:var(--ink);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:48px 28px;border-left:1px solid rgba(255,255,255,.14)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat strong{display:block;font-family:var(--display);font-stretch:90%;font-weight:900;font-size:clamp(2.8rem,5vw,4.4rem);line-height:.95;color:#fff}
+.stat strong i{font-style:normal;color:var(--red)}
+.stat span{display:block;margin-top:12px;color:#b9b9bd;font-size:.95rem;max-width:210px}
+
+/* services index */
+.services{padding:110px 0}
+.services .head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:50px}
+.services h2{font-size:clamp(2.2rem,4.4vw,3.8rem);text-transform:uppercase;font-stretch:94%;margin-top:16px}
+.services .head p{max-width:340px;color:var(--grey)}
+.idx{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:start}
+.list{border-top:2px solid var(--ink)}
+.item{border-bottom:1px solid var(--line)}
+.item>button{width:100%;display:grid;grid-template-columns:54px 1fr 28px;align-items:center;gap:8px;text-align:left;background:none;border:0;padding:24px 4px;cursor:pointer;font:inherit;color:inherit}
+.item .n{font-family:var(--display);font-weight:800;font-size:.95rem;color:var(--grey);font-stretch:110%}
+.item .t{font-family:var(--display);font-weight:800;font-stretch:92%;font-size:clamp(1.4rem,2.5vw,2.1rem);text-transform:uppercase;line-height:1;transition:.2s}
+.item .pl{width:28px;height:28px;position:relative}
+.item .pl::before,.item .pl::after{content:"";position:absolute;left:5px;right:5px;top:13px;height:3px;background:var(--ink);transition:.25s}
+.item .pl::after{transform:rotate(90deg)}
+.item:hover .t{color:var(--red)}
+.item.open .t{color:var(--red)}
+.item.open .n{color:var(--red)}
+.item.open .pl::after{transform:rotate(0)}
+.item .body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.item.open .body{grid-template-rows:1fr}
+.item .body>div{overflow:hidden}
+.item .body .in{padding:0 4px 28px 62px;color:#424245}
+.item .body p+p{margin-top:12px}
+.item .body ul{margin:14px 0 4px;display:grid;gap:9px}
+.item .body li{padding-left:26px;position:relative}
+.item .body li::before{content:"";position:absolute;left:0;top:.6em;width:12px;height:3px;background:var(--red)}
+.item .body .m{display:none;margin-bottom:18px;width:100%;aspect-ratio:16/10;object-fit:cover}
+.item .body a.more{display:inline-block;margin-top:16px;font-weight:700;color:var(--red);border-bottom:2px solid currentColor}
+.preview{position:sticky;top:110px}
+.preview .box{position:relative;aspect-ratio:4/5;background:var(--ink);clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,var(--cut) 100%,0 calc(100% - var(--cut)))}
+.preview .box img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s}
+.preview .box img.on{opacity:1}
+.preview .tag{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;font-family:var(--display);font-stretch:108%;font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:.9rem;padding:12px 22px 12px 26px;z-index:2;min-width:60%}
+.preview .box{--pw:1}
+
+/* carpet detail */
+.detail{background:var(--paper);padding:110px 0}
+.detail .top2{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;margin-bottom:60px}
+.detail h2{font-size:clamp(2rem,3.8vw,3.2rem);text-transform:uppercase;font-stretch:94%;margin-top:16px}
+.detail h2 em{font-style:italic;color:var(--red)}
+.detail .top2 p{color:#424245;align-self:end}
+.pts{display:grid;grid-template-columns:repeat(2,1fr);column-gap:70px;counter-reset:p}
+.pt{display:grid;grid-template-columns:76px 1fr;gap:6px;padding:26px 0;border-top:1px solid #bdb9b2;counter-increment:p}
+.pt::before{content:counter(p,decimal-leading-zero);font-family:var(--display);font-weight:900;font-stretch:80%;font-size:2.7rem;line-height:1;color:var(--red)}
+.pt h3{font-size:1.15rem;text-transform:uppercase;font-stretch:100%;margin-bottom:6px;letter-spacing:0}
+.pt p{color:#4a4a4d;font-size:.98rem}
+
+/* allergy */
+.allergy{padding:110px 0;overflow:hidden}
+.allergy .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:center}
+.round{position:relative;width:min(100%,470px);aspect-ratio:1;margin-inline:auto}
+.round img{width:100%;height:100%;object-fit:cover;border-radius:50%;border:10px solid #fff;box-shadow:0 0 0 3px var(--red)}
+.round .dot{position:absolute;border-radius:50%;background:var(--red)}
+.round .d1{width:90px;height:90px;right:-14px;top:22px}
+.round .d2{width:34px;height:34px;left:10px;bottom:36px;background:var(--ink)}
+.round .big{position:absolute;right:-26px;bottom:30px;background:var(--ink);color:#fff;padding:18px 22px;font-family:var(--display);font-stretch:90%;font-weight:900;font-size:2.7rem;line-height:1;z-index:2}
+.round .big small{display:block;font-family:var(--body);font-weight:500;font-size:.82rem;letter-spacing:0;margin-top:6px;color:#c7c7ca}
+.allergy h2{font-size:clamp(2rem,3.8vw,3.2rem);text-transform:uppercase;font-stretch:94%;margin:16px 0 22px}
+.allergy p{color:#424245;margin-bottom:14px;max-width:560px}
+.checks{display:grid;gap:10px;margin:22px 0 28px}
+.checks li{display:flex;gap:12px;font-weight:600}
+.checks svg{color:var(--red);flex:none;margin-top:3px}
+.odour{background:var(--paper);padding:22px 26px;border-left:6px solid var(--ink);max-width:560px}
+.odour b{font-family:var(--display);text-transform:uppercase;font-size:1.05rem;display:block;margin-bottom:6px}
+.odour p{margin:0;font-size:.96rem}
+
+/* pet steps */
+.pet{background:var(--ink);color:#fff;padding:0}
+.pet .wrap{display:grid;grid-template-columns:.8fr 1.2fr}
+.pet .pic{position:relative;min-height:560px;margin-left:calc((100vw - min(1200px,100vw - 40px))/-2)}
+.pet .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(0 0,100% 0,calc(100% - 70px) 100%,0 100%)}
+.pet .txt{padding:100px 0 100px 40px}
+.pet h2{font-size:clamp(2rem,3.8vw,3.2rem);text-transform:uppercase;font-stretch:94%;margin:16px 0 18px}
+.pet .txt>p{color:#c9c9cc;max-width:560px}
+.steps{margin:34px 0 36px;display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.14)}
+.step{background:var(--ink);padding:22px 22px 24px}
+.step i{font-style:normal;font-family:var(--display);font-weight:900;font-size:1.7rem;color:var(--red);display:block;margin-bottom:6px}
+.step p{font-size:.96rem;color:#dedee0}
+.pet .eyebrow{color:#ec8d91}
+
+/* guarantee */
+.promise{background:var(--red);color:#fff;position:relative;overflow:hidden}
+.promise::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(255,255,255,.08)}
+.promise .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;padding:90px 0;align-items:center;position:relative;z-index:1}
+.promise h2{font-size:clamp(2.1rem,4.4vw,3.8rem);text-transform:uppercase;font-stretch:92%}
+.promise h2 em{font-style:italic}
+.promise .rl{display:grid;gap:16px}
+.promise .rl div{background:rgba(31,31,33,.9);padding:22px 24px;display:flex;gap:16px;align-items:flex-start}
+.promise .rl svg{flex:none;color:#fff;margin-top:2px}
+.promise .rl b{font-family:var(--display);text-transform:uppercase;display:block;font-size:1.05rem}
+.promise .rl span{color:#cfcfd2;font-size:.95rem}
+.promise .free{font-size:1.15rem;margin:22px 0 30px;max-width:520px}
+.promise .free small{display:block;opacity:.8;font-size:.85rem;margin-top:6px}
+
+/* credentials */
+.cred{padding:100px 0 70px}
+.cred .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:center}
+.cred h2{font-size:clamp(1.9rem,3.4vw,2.8rem);text-transform:uppercase;font-stretch:94%;margin:16px 0 18px}
+.cred p{color:#424245;max-width:480px}
+.cred .tagl{margin-top:20px;font-family:var(--display);font-style:italic;font-weight:800;font-size:1.3rem;color:var(--red);text-transform:uppercase}
+.badges{display:flex;gap:10px;align-items:center;justify-content:center;flex-wrap:wrap}
+.badges img{height:170px;width:auto;transition:.25s}
+.badges img:nth-child(2){height:200px}
+.badges img:hover{transform:translateY(-6px) rotate(-2deg)}
+
+/* reviews */
+.reviews{padding:30px 0 110px}
+.reviews .head{display:flex;justify-content:space-between;align-items:end;margin-bottom:46px;gap:24px}
+.reviews h2{font-size:clamp(2rem,4vw,3.4rem);text-transform:uppercase;font-stretch:94%;margin-top:16px}
+.rv{display:grid;grid-template-columns:1.3fr 1fr;grid-template-rows:auto auto;gap:24px}
+.q{background:var(--paper);padding:34px 34px 30px;position:relative}
+.q .st{color:var(--red);letter-spacing:3px;font-size:1rem;margin-bottom:14px}
+.q blockquote{font-size:1.04rem;color:#2d2d30}
+.q cite{display:block;margin-top:20px;font-style:normal;font-weight:700;font-family:var(--display);text-transform:uppercase;font-size:.9rem;letter-spacing:.05em}
+.q cite span{display:block;font-family:var(--body);text-transform:none;letter-spacing:0;font-weight:500;color:var(--grey);font-size:.85rem}
+.q.a{grid-row:span 2;background:var(--ink);color:#fff;padding:48px}
+.q.a blockquote{font-family:var(--display);font-stretch:94%;font-weight:700;font-size:clamp(1.5rem,2.5vw,2.2rem);line-height:1.2;color:#fff}
+.q.a::before{content:"\201C";position:absolute;right:34px;top:6px;font-family:var(--display);font-size:9rem;line-height:1;color:var(--red)}
+.q.a .st{color:#fff}
+.q.a cite span{color:#b5b5b9}
+.q.a .m{margin-top:20px;color:#c4c4c8;font-size:1rem}
+
+/* area + help */
+.area{background:var(--paper);padding:100px 0 0}
+.area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding-bottom:90px}
+.area h2{font-size:clamp(1.9rem,3.4vw,2.8rem);text-transform:uppercase;font-stretch:94%;margin:16px 0 22px}
+.area p{color:#424245;margin-bottom:22px}
+.towns{display:flex;flex-wrap:wrap;gap:10px}
+.towns li{padding:11px 18px;border:2px solid var(--ink);font-family:var(--display);font-weight:700;font-stretch:104%;text-transform:uppercase;font-size:.9rem;letter-spacing:.04em;transition:.2s}
+.towns li:first-child{background:var(--ink);color:#fff}
+.towns li:hover{background:var(--red);border-color:var(--red);color:#fff}
+.help ul{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:2px solid var(--ink);margin-bottom:28px}
+.help li a{display:flex;justify-content:space-between;padding:15px 4px;border-bottom:1px solid #c8c4bd;font-weight:700;transition:.2s}
+.help li a::after{content:"\2192";color:var(--red)}
+.help li a:hover{padding-left:12px;color:var(--red)}
+.help .go{display:flex;flex-wrap:wrap;gap:12px}
+
+/* footer */
+footer{background:var(--ink);color:#bdbdc1}
+.ft{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:60px;padding:80px 0 56px}
+.ft .plate{display:inline-block;background:#fff;padding:12px 18px;clip-path:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,14px 100%,0 calc(100% - 14px))}
+.ft .plate img{height:56px;width:auto}
+.ft p{margin-top:20px;max-width:330px;font-size:.95rem}
+.ft h4{font-family:var(--display);font-stretch:110%;text-transform:uppercase;letter-spacing:.12em;color:#fff;font-size:.8rem;margin-bottom:18px}
+.ft li{margin-bottom:9px}
+.ft a:hover{color:#fff}
+.ft .big{font-family:var(--display);font-weight:800;font-size:1.5rem;color:#fff;font-stretch:104%}
+.soc{display:flex;gap:10px;margin-top:20px}
+.soc a{width:44px;height:44px;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff;transition:.2s}
+.soc a:hover{background:var(--red);border-color:var(--red)}
+.fb{border-top:1px solid rgba(255,255,255,.12);padding:22px 0;font-size:.88rem}
+.fb .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;align-items:center}
+.fb a{color:#fff;font-weight:600}
+.fb a:hover{color:#ef8f93}
+.fb .l{display:flex;gap:22px;flex-wrap:wrap}
+
+/* reveal */
+.js .rv-in{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.js .rv-in.show{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1040px){
+  .menu{display:none}
+  .burger{display:block}
+  .menu.open{display:flex;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 20px 20px;border-bottom:1px solid var(--line)}
+  .menu.open a{padding:14px 0;border-bottom:1px solid var(--line)}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-copy{padding:60px 0 30px}
+  .hero-pic{margin:0 -20px;min-height:380px}
+  .hero-pic .photo{clip-path:polygon(0 8%,100% 0,100% 100%,0 100%)}
+  .seal{left:20px;bottom:20px;width:130px;height:130px}
+  .est{right:20px;top:36px}
+  .intro .wrap,.allergy .wrap,.cred .wrap,.promise .wrap,.area .wrap,.detail .top2{grid-template-columns:1fr;gap:50px}
+  .idx{grid-template-columns:1fr}
+  .preview{display:none}
+  .item .body .m{display:block}
+  .item .body .in{padding-left:4px}
+  .pts{grid-template-columns:1fr}
+  .pet .wrap{grid-template-columns:1fr}
+  .pet .pic{min-height:340px;margin:0 -20px}
+  .pet .pic img{clip-path:none}
+  .pet .txt{padding:60px 0 70px}
+  .stats .wrap{grid-template-columns:repeat(2,1fr)}
+  .stat:nth-child(3){border-left:0;padding-left:0}
+  .stat{border-top:1px solid rgba(255,255,255,.14)}
+  .stat:nth-child(-n+2){border-top:0}
+  .rv{grid-template-columns:1fr}
+  .q.a{grid-row:auto}
+  .ft{grid-template-columns:1fr 1fr}
+  .ft>div:first-child{grid-column:1/-1}
+  .services .head,.reviews .head{flex-direction:column;align-items:start}
+}
+@media(max-width:640px){
+  body{font-size:16px}
+  .top .wrap{justify-content:center}
+  .top .wrap span:last-child{display:none}
+  .tel span{display:none}
+  .nav-r .btn{display:none}
+  .brand img{height:46px}
+  .steps{grid-template-columns:1fr}
+  .help ul{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .badges img{height:120px}
+  .badges img:nth-child(2){height:145px}
+  .item>button{grid-template-columns:38px 1fr 28px}
+  .frame::before{inset:16px -12px -16px 12px}
+  .round .big{right:-6px}
+  .hero{--x:0}
+}
+@media(prefers-reduced-motion:reduce){.ticker .track{animation:none}.js .rv-in{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body id="top">
+
+<div class="top"><div class="wrap"><span><b>Owner-operated</b> local business in Red Deer, Alberta</span><span>Serving communities within 100 km of Red Deer</span></div></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Steam Clean Express home"><img src="images/logo.png" alt="Steam Clean Express" width="800" height="311"></a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="/reviews">Reviews</a>
+      <a href="/gallery">Gallery</a>
+    </nav>
+    <div class="nav-r">
+      <a class="tel" href="tel:+14033409015"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>(403) 340-9015</span></a>
+      <a class="btn" href="#book">Book Online</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <h1><span class="kick">Professional Carpet Cleaning in Red Deer, AB</span>The Most <em>Thorough</em> Cleaning Ever!</h1>
+      <p class="sub">Experience why your neighbours in Red Deer choose Steam Clean Express for their carpet and upholstery cleaning needs.</p>
+      <div class="cta">
+        <a class="btn" href="#book">Book Online</a>
+        <a class="btn ghost" href="/reviews">Read Our Reviews</a>
+      </div>
+      <ul class="marks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Owner-operated, local business</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Fast drying time</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Safe, biodegradable cleaning agents</li>
+      </ul>
+    </div>
+    <div class="hero-pic">
+      <div class="photo"><img src="images/hero-carpet-cleaning.jpg" alt="Truck-mounted steam wand cleaning a light carpet" fetchpriority="high"></div>
+      <div class="est">Est. 1991</div>
+      <div class="seal"><img src="images/badge-2023.png" alt="ThreeBestRated Best Business of 2023, Steam Clean Express"></div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div class="track">
+  <span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span>
+  <span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span><span>Fluffy. Fresh. Bouncy. Clean.</span>
+</div></div>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="wrap">
+    <div class="rv-in">
+      <div class="eyebrow">Red Deer carpet cleaner</div>
+      <h2>Clean carpets mean a <em>healthier</em> home</h2>
+      <p>Steam Clean Express is a Red Deer carpet cleaner that knows how much clean carpets matter. They improve the air quality in your home and the health of your family.</p>
+      <p>That is why every job comes with a simple promise: if you are not satisfied with the result, we clean it again for free.</p>
+      <div class="free">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#c3262d" stroke-width="2.4"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/><path d="m8.5 12 2.6 2.6 4.6-5"/></svg>
+        <div><b>Free cleaning if you are not satisfied</b>Book with confidence and see the difference.</div>
+      </div>
+    </div>
+    <figure class="frame rv-in">
+      <img src="images/fluffy-carpet.jpg" alt="Soft, freshly cleaned cream carpet fibres" loading="lazy">
+      <figcaption>Fluffy. Fresh. Bouncy. Clean.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat"><strong>98<i>%</i></strong><span>of moisture removed for fast drying</span></div>
+    <div class="stat"><strong>90<i>%+</i></strong><span>drop in allergen levels with the Allergy Relief Treatment</span></div>
+    <div class="stat"><strong>6<i> mo</i></strong><span>of residual effect from the allergy treatment</span></div>
+    <div class="stat"><strong>220<i>°F</i></strong><span>water heated for auto and RV steam cleaning</span></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv-in">
+      <div><div class="eyebrow">What we clean</div><h2>Our services</h2></div>
+      <p>Pick a service to see how we do it.</p>
+    </div>
+    <div class="idx">
+      <div class="list" id="list">
+        <div class="item open" id="carpet-cleaning" data-img="images/hero-carpet-cleaning.jpg" data-tag="Carpet Cleaning">
+          <button aria-expanded="true"><span class="n">01</span><span class="t">Carpet Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/hero-carpet-cleaning.jpg" alt="Carpet being steam cleaned" loading="lazy">
+            <p>Traffic and daily wear dull carpets and can harbour germs and bacteria. Our truck-mounted hot water extraction (steam) reaches the fibres of 100% of the carpet yarns.</p>
+            <a class="more" href="#carpet-detail">See how it works</a>
+          </div></div></div>
+        </div>
+        <div class="item" id="allergy-relief-treatment" data-img="images/allergy-relief.jpg" data-tag="Allergy Relief Treatment">
+          <button aria-expanded="false"><span class="n">02</span><span class="t">Allergy Relief Treatment</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/allergy-relief.jpg" alt="Woman sneezing into a tissue" loading="lazy">
+            <p>Dust mites and pet allergens are not always removed by cleaning alone. Our ResponsibleCare System uses specialized cleaners, followed by a treatment that inactivates allergens.</p>
+            <a class="more" href="#allergy">Learn more</a>
+          </div></div></div>
+        </div>
+        <div class="item" id="upholstery-cleaning" data-img="images/upholstery-cleaning.jpg" data-tag="Upholstery Cleaning">
+          <button aria-expanded="false"><span class="n">03</span><span class="t">Upholstery Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/upholstery-cleaning.jpg" alt="Technician steam cleaning a sofa" loading="lazy">
+            <p>Just like your carpets, your upholstery is subjected to spills, dirt and bacteria. A professional upholstery cleaning helps make it look its best.</p>
+            <p>We come out and evaluate your furniture, then choose the best method, because each manufacturer recommends a specialized cleaning method. We are upfront and honest about what is possible, so there are no surprises.</p>
+          </div></div></div>
+        </div>
+        <div class="item" id="pet-odour-removal" data-img="images/pet-odour-removal.jpg" data-tag="Pet Odour Removal">
+          <button aria-expanded="false"><span class="n">04</span><span class="t">Pet Odour Removal</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/pet-odour-removal.jpg" alt="Puppy lying on a carpet next to a stain" loading="lazy">
+            <p>A four step process with the Water Claw extraction tool and BIO Modifier Xtreme reaches the carpet, the underlay and the subfloor. If the problem cannot be solved, we tell you upfront.</p>
+            <a class="more" href="#pet">See the four steps</a>
+          </div></div></div>
+        </div>
+        <div class="item" id="tile-grout-cleaning" data-img="images/tile-grout-cleaning.jpg" data-tag="Tile &amp; Grout Cleaning">
+          <button aria-expanded="false"><span class="n">05</span><span class="t">Tile &amp; Grout Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/tile-grout-cleaning.jpg" alt="Clean tile floor in a bright kitchen" loading="lazy">
+            <p>We use the Rotovac 360i to clean tile and grout lines without manual scrubbing.</p>
+          </div></div></div>
+        </div>
+        <div class="item" id="auto-rv-cleaning" data-img="images/auto-rv-cleaning.jpg" data-tag="Auto &amp; RV Cleaning">
+          <button aria-expanded="false"><span class="n">06</span><span class="t">Auto &amp; RV Cleaning</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/auto-rv-cleaning.jpg" alt="Gloved hand cleaning a car dashboard" loading="lazy">
+            <p>Truck-mounted steam cleaning has ten times the suction of portable units. Water is heated to 220°F (104°C) for a more thorough clean and a shorter drying time.</p>
+            <p>We clean cars, RVs and boats.</p>
+          </div></div></div>
+        </div>
+        <div class="item" id="hazmat-cleanup" data-img="images/hazmat-cleanup.jpg" data-tag="HAZMAT Cleanup">
+          <button aria-expanded="false"><span class="n">07</span><span class="t">HAZMAT Cleanup</span><span class="pl"></span></button>
+          <div class="body"><div><div class="in">
+            <img class="m" src="images/hazmat-cleanup.jpg" alt="Technicians in white protective suits" loading="lazy">
+            <p>Owner Dan completed technical training with AMDECON and is certified for crime and trauma scene cleanups, hoarder cleanups and meth lab decontamination.</p>
+          </div></div></div>
+        </div>
+      </div>
+      <aside class="preview" aria-hidden="true">
+        <div class="box" id="pbox">
+          <img class="on" src="images/hero-carpet-cleaning.jpg" alt="">
+          <img src="images/allergy-relief.jpg" alt="" loading="lazy">
+          <img src="images/upholstery-cleaning.jpg" alt="" loading="lazy">
+          <img src="images/pet-odour-removal.jpg" alt="" loading="lazy">
+          <img src="images/tile-grout-cleaning.jpg" alt="" loading="lazy">
+          <img src="images/auto-rv-cleaning.jpg" alt="" loading="lazy">
+          <img src="images/hazmat-cleanup.jpg" alt="" loading="lazy">
+          <div class="tag" id="ptag">Carpet Cleaning</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CARPET DETAIL -->
+<section class="detail" id="carpet-detail">
+  <div class="wrap">
+    <div class="top2 rv-in">
+      <div><div class="eyebrow">Carpet cleaning</div><h2>Why our carpet cleaning <em>works</em></h2></div>
+      <p>Steam cleaning is how it is done properly. Truck-mounted hot water extraction is the method 98% of carpet mills recommend.</p>
+    </div>
+    <div class="pts">
+      <div class="pt rv-in"><div><h3>Long-lasting deep clean</h3><p>Extraction reaches the fibres of 100% of the carpet yarns.</p></div></div>
+      <div class="pt rv-in"><div><h3>Germ and dust mite removal</h3><p>Truck-mounted hot water extraction (steam) removes germs and dust mites.</p></div></div>
+      <div class="pt rv-in"><div><h3>Safe cleaners</h3><p>Biodegradable agents designed for carpet fibres, safe for children and pets.</p></div></div>
+      <div class="pt rv-in"><div><h3>No residue</h3><p>Rinsing strokes flush out the dirt and the cleaning agents.</p></div></div>
+      <div class="pt rv-in"><div><h3>Fast drying</h3><p>Carpets dry in about 2 to 10 hours, with 98% of moisture removed.</p></div></div>
+      <div class="pt rv-in"><div><h3>Thorough work</h3><p>Every area is cleaned. Most furniture is moved, with plastic tabs and blocks placed under it so carpets dry properly.</p></div></div>
+      <div class="pt rv-in"><div><h3>Customer care</h3><p>We call a day or two after the job to make sure you are satisfied.</p></div></div>
+      <div class="pt rv-in"><div><h3>Honest from the start</h3><p>If a stain cannot be removed, we tell you before we begin.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ALLERGY -->
+<section class="allergy" id="allergy">
+  <div class="wrap">
+    <div class="round rv-in">
+      <img src="images/allergy-relief.jpg" alt="Woman sneezing into a tissue" loading="lazy">
+      <span class="dot d1"></span><span class="dot d2"></span>
+      <div class="big">90%+<small>lower allergen levels</small></div>
+    </div>
+    <div class="rv-in">
+      <div class="eyebrow">Allergy Relief Treatment</div>
+      <h2>Breathe easier at home</h2>
+      <p>Dust mites and pet allergens are not always fully dealt with by cleaning alone. The ResponsibleCare System uses specialized cleaners, then an Allergy Relief Treatment that inactivates allergens.</p>
+      <ul class="checks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Allergen levels drop by 90% or more</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Residual effects for up to 6 months</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m4 12 5 5L20 6"/></svg>Safe for children and pets</li>
+      </ul>
+      <div class="odour">
+        <b>Odour control</b>
+        <p>Ozone generators can dramatically improve indoor air quality. We rent ozone generators to help with mould and odour removal, and for help removing smells.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PET -->
+<section class="pet" id="pet">
+  <div class="wrap">
+    <div class="pic"><img src="images/pet-odour-removal.jpg" alt="Puppy lying on a carpet next to a stain" loading="lazy"></div>
+    <div class="txt rv-in">
+      <div class="eyebrow">Pet odour and stain removal</div>
+      <h2>Four steps to a fresh floor</h2>
+      <p>We use the Water Claw extraction tool and BIO Modifier Xtreme (by BridgePointe). If the problem cannot be solved, we say so upfront.</p>
+      <div class="steps">
+        <div class="step"><i>1</i><p>Saturate the affected carpet, underlay and subfloor with hot water.</p></div>
+        <div class="step"><i>2</i><p>Extract and flush with the Water Claw.</p></div>
+        <div class="step"><i>3</i><p>Apply BIO Modifier Xtreme through the carpet and underlay to the subfloor.</p></div>
+        <div class="step"><i>4</i><p>Perform a second extraction.</p></div>
+      </div>
+      <a class="btn" href="#book">I'm ready!</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise">
+  <div class="wrap">
+    <div class="rv-in">
+      <h2>Risk-free. <em>Try us</em> first.</h2>
+      <p class="free">If you are still not sure, you can try us out for free with our one free room cleaning!<small>*For new clients and home owners only</small></p>
+      <a class="btn white" href="#book">Please clean my carpets!</a>
+    </div>
+    <div class="rl rv-in">
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/><path d="m8.5 12 2.6 2.6 4.6-5"/></svg><p><b>No payment if you are not satisfied</b><span>Booking is risk-free.</span></p></div>
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><p><b>Upfront about stains</b><span>If a stain cannot be removed, we tell you before we start.</span></p></div>
+      <div><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg><p><b>Free cleaning if not satisfied</b><span>We make it right.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="cred">
+  <div class="wrap">
+    <div class="rv-in">
+      <div class="eyebrow">Certified and recognized</div>
+      <h2>Trusted in Red Deer</h2>
+      <p>Steam Clean Express is certified by the Institute of Inspection Cleaning and Restoration (IICRC) and follows a code of ethics.</p>
+      <div class="tagl">Fluffy. Fresh. Bouncy. Clean.</div>
+    </div>
+    <div class="badges rv-in">
+      <img src="images/badge-2021.png" alt="ThreeBestRated Best Business of 2021" loading="lazy">
+      <img src="images/badge-2023.png" alt="ThreeBestRated Best Business of 2023" loading="lazy">
+      <img src="images/badge-2024.svg" alt="ThreeBestRated Best Carpet Cleaning in Red Deer 2024" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="head rv-in">
+      <div><div class="eyebrow">Reviews</div><h2>Straight from our customers</h2></div>
+      <a class="btn dark" href="/reviews">Read more reviews</a>
+    </div>
+    <div class="rv">
+      <figure class="q a rv-in">
+        <div class="st">★★★★★</div>
+        <blockquote>Great service. My carpets have never been so clean. Steve got out stains that a previous company was unable to. Carpets left feeling soft and looking brand new!</blockquote>
+        <cite>Ry M.<span>via Google</span></cite>
+      </figure>
+      <figure class="q rv-in">
+        <div class="st">★★★★★</div>
+        <blockquote>I basically had a "carpet emergency" due to pet accidents and they came the very next day and did an excellent job on my light colored carpet.</blockquote>
+        <cite>Kelly B.<span>via Google</span></cite>
+      </figure>
+      <figure class="q rv-in">
+        <div class="st">★★★★★</div>
+        <blockquote>The fellow I spoke with on the phone (Dan) was helpful and the fellow that came to do the cleaning (Sven) was great too. (You can't even tell our dog had any issues on the carpet!)</blockquote>
+        <cite>Becky A.<span>via Google</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- AREA + HELP -->
+<section class="area" id="book">
+  <div class="wrap">
+    <div class="rv-in">
+      <div class="eyebrow">Where we work</div>
+      <h2>Serving communities within 100 km of Red Deer</h2>
+      <p>Call us or book online and we will take it from there.</p>
+      <ul class="towns">
+        <li>Red Deer</li><li>Blackfalds</li><li>Lacombe</li><li>Penhold</li><li>Innisfail</li><li>Sylvan Lake</li><li>Springbrook</li>
+      </ul>
+    </div>
+    <div class="help rv-in">
+      <div class="eyebrow">How can we help you?</div>
+      <ul style="margin-top:22px">
+        <li><a href="#carpet-cleaning">Carpet Cleaning</a></li>
+        <li><a href="#upholstery-cleaning">Upholstery Cleaning</a></li>
+        <li><a href="#pet-odour-removal">Pet Odour Removal</a></li>
+        <li><a href="#allergy-relief-treatment">Allergy Relief Treatment</a></li>
+        <li><a href="#tile-grout-cleaning">Tile &amp; Grout Cleaning</a></li>
+        <li><a href="#auto-rv-cleaning">Auto &amp; RV Cleaning</a></li>
+        <li><a href="#hazmat-cleanup">HAZMAT Cleanup</a></li>
+      </ul>
+      <div class="go">
+        <a class="btn" href="tel:+14033409015">Call (403) 340-9015</a>
+        <!-- TODO: replace with the client's real email address -->
+        <a class="btn dark" href="mailto:">Email Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap ft">
+    <div>
+      <a class="plate" href="/"><img src="images/logo.png" alt="Steam Clean Express" width="800" height="311"></a>
+      <p>Professional carpet and upholstery cleaning in Red Deer, Alberta. Owner-operated and local.</p>
+      <div class="soc">
+        <a href="https://www.facebook.com/steamcleanexpress" aria-label="Facebook" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.9c0-.9.3-1.5 1.6-1.5h1.7V3.5c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.1v2.3H7.6V13h2.8v8z"/></svg></a>
+        <a href="https://www.instagram.com/steam_clean_express" aria-label="Instagram" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#carpet-cleaning">Carpet Cleaning</a></li>
+        <li><a href="#allergy-relief-treatment">Allergy Relief Treatment</a></li>
+        <li><a href="#upholstery-cleaning">Upholstery Cleaning</a></li>
+        <li><a href="#pet-odour-removal">Pet Odour Removal</a></li>
+        <li><a href="#tile-grout-cleaning">Tile &amp; Grout Cleaning</a></li>
+        <li><a href="#auto-rv-cleaning">Auto &amp; RV Cleaning</a></li>
+        <li><a href="#hazmat-cleanup">HAZMAT Cleanup</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <p style="margin:0 0 14px"><a class="big" href="tel:+14033409015">(403) 340-9015</a></p>
+      <ul>
+        <li>Red Deer, Alberta</li>
+        <li><a href="/reviews">Reviews</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fb">
+    <div class="wrap">
+      <div class="l"><span>&copy; <span id="yr">2026</span> Steam Clean Express. All rights reserved.</span><a href="#top">Back to top</a></div>
+      <span>Design by <a href="https://cleanningdigital.com/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+document.getElementById('yr').textContent=new Date().getFullYear();
+// menu
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open')});
+// services index
+var items=[].slice.call(document.querySelectorAll('.item')),pimgs=[].slice.call(document.querySelectorAll('#pbox img')),ptag=document.getElementById('ptag');
+function openItem(it){
+  items.forEach(function(x){var on=x===it;x.classList.toggle('open',on);x.querySelector('button').setAttribute('aria-expanded',on)});
+  var i=items.indexOf(it);pimgs.forEach(function(p,k){p.classList.toggle('on',k===i)});
+  ptag.innerHTML=it.getAttribute('data-tag');
+}
+items.forEach(function(it){
+  var btn=it.querySelector('button');
+  btn.addEventListener('click',function(){openItem(it)});
+  btn.addEventListener('mouseenter',function(){if(window.matchMedia('(min-width:1041px)').matches)openItem(it)});
+});
+// open matching service from hash
+if(location.hash){var t=document.querySelector(location.hash);if(t&&t.classList&&t.classList.contains('item'))openItem(t)}
+window.addEventListener('hashchange',function(){var t=document.querySelector(location.hash);if(t&&t.classList&&t.classList.contains('item'))openItem(t)});
+// reveal
+var els=[].slice.call(document.querySelectorAll('.rv-in'));
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+}else{els.forEach(function(e){e.classList.add('show')})}
+</script>
+</body>
+</html>
